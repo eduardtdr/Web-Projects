@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/resume.png" />
+    <title>Tudor Eduard - Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+      integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ="
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="container">
+        <a href="#" class="contact contact-btn">Contact me</a>
+      </nav>
+
+      <div class="header-container">
+
+        <div class="header-container-inner">
+
+          <div class="image-container active">
+            <div class="image-container-inner">
+              <div class="front-image">
+                <img class="active image-two" src="img/image2.jpg" alt="me" />
+              </div>
+              <div class="back-image">
+                <img class="active front-image" src="img/image1.jpg" alt="me" />
+              </div>
+            </div>
+
+          </div>
+
+            <div class="presentation active">
+              <h1>Hello, I'm Eduard Tudor</h1>
+              <p>
+                I like to build and design websites. Take a look at some of my
+                projects!
+              </p>
+            </div>
+
+            <button class="btn btn--right" id="next">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="btn-icon"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            </button>
+
+          </div>
+
+          <div class="header-container-outer">
+            <a class="project-shortcut" href="#"><strong>abc</strong></a>
+            <a class="project-shortcut" href="#"><strong>abc</strong></a>
+            <a class="project-shortcut" href="#"><strong>abc</strong></a>
+            <a class="project-shortcut" href="#"><strong>abc</strong></a>
+            <a class="project-shortcut" target="_blank" href="https://calculator-edt.netlify.app"><strong>Calculator</strong></a>
+            <a class="project-shortcut" href="#"><strong>abc</strong></a>
+            <a class="project-shortcut" href="#"><strong>abc</strong></a>
+            <a class="project-shortcut" href="#"><strong>abc</strong></a>
+            <a class="project-shortcut" href="#"><strong>abc</strong></a>
+            <button class="btn btn--left" id="prev">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="btn-icon"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M15 19l-7-7 7-7"
+                />
+              </svg>
+            </button>
+            <a class="git-link" href="#"
+              ><ion-icon class="github-icon" name="logo-github"></ion-icon
+            ></a>
+          </div>
+
+          <div class="dots">
+            <button class="dot dot--fill" id="dot1">&nbsp;</button>
+            <button class="dot" id="dot2">&nbsp;</button>
+          </div>
+        
+        </div>
+      </div>
+    </header>
+    <div class="modal-container" id="modal">
+      <div class="modal">
+        <button class="close-btn" id="close">
+          <i class="fa fa-times"></i>
+        </button>
+        <div class="modal-header">
+          <h3>Contact me</h3>
+        </div>
+        <div class="modal-content">
+          <form class="modal-form" name="contact me" netlify>
+            <div>
+              <label for="name">Name(required)</label>
+              <input
+                type="text"
+                id="name"
+                placeholder="Enter Name"
+                class="form-input"
+                name="name"
+                required
+              />
+            </div>
+            <div>
+              <label for="email">Email(required)</label>
+              <input
+                type="email"
+                id="email"
+                placeholder="Enter Email"
+                class="form-input"
+                name="email"
+                required
+              />
+            </div>
+            <div>
+              <label for="subject">Subject(required)</label>
+              <input
+                type="subject"
+                id="subject"
+                placeholder="Enter Subject"
+                class="form-input"
+                name="subject"
+                required
+              />
+            </div>
+            <div>
+              <label for="message">Message(required)</label>
+              <textarea
+                type="message"
+                id="message"
+                placeholder="Enter a message"
+                class="form-textarea"
+                name="message"
+                required
+              ></textarea>
+            </div>
+            <input type="submit" value="Submit" class=" submit-btn" />
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
